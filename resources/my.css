@@ -125,6 +125,11 @@ li,
 dd {
     font-size: 90%;
 }
+li {
+    color: #000000;
+    font-size: 110%;
+}
+
 
 p {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -153,8 +158,23 @@ footer {
     color: #000000;
     font-size: 120%;
 }
-
+#myblurb p {
+    text-align: left;
+    padding: 0 2em;
+}
 @media (min-width: 600px) {
+    #mygrid {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        grid-template-rows: auto;
+        grid-gap: 2em;
+    }
+    #myblurb {
+        font-size: 90%;
+        text-align: center;
+        background-color: #eaeaea;
+        box-shadow: 5px 5px 10px 5px rgba(63, 40, 96, 0.35);
+    }
     nav ul {
         display: flex;
         flex-flow: row nowrap;
@@ -168,7 +188,7 @@ footer {
 
 @media (min-width: 1024px) {
     .content {
-        background-image: url(lilybanner.jpg);
+        background-image: url(lotus-unsplash.jpg);
         height: 200px;
         padding-top: .5em
     }
