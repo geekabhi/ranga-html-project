@@ -29,6 +29,9 @@
                           <a class="nav-link" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
+                          <a class="nav-link" href="album.html">Plant's Album</a>
+                      </li>
+                      <li class="nav-item">
                           <a class="nav-link" href="liveplants.html">Live Plants</a>
                       </li>
                       <li class="nav-item">
@@ -51,17 +54,22 @@
                 <h1 class="display-3" style="text-align: center;"> Fill this form. Will get back to you. </h1>
 
                 <div class="col-6">
-                    <div class="mb-3">
-                        <label for="emailAddress" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" onblur="validateEmail();">
-                    </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" id="submit" class="btn btn-primary mb-3">Submit </button>
-                    </div>
+                    <form class="row g-3 needs-validation" validate>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" onblur="validateEmail(event);" required>
+                        </div>
+                        <div id="emailAddressValidationMessage" class="invalid-feedback">
+                            Email address is invalid!
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" id="submit" class="btn btn-primary mb-3">Submit </button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
